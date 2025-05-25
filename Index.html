@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CastNet – Fly Fishing Patagonia</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="hero">
+    <header class="navbar">
+      <img src="assets/logo.svg" alt="CastNet Logo" class="logo"/>
+      <nav>
+        <a href="#">Trips</a>
+        <a href="#">Anglers</a>
+        <a href="#">Guides</a>
+        <a href="login.html">Log&nbsp;in</a>
+      </nav>
+    </header>
+
+    <main class="content">
+      <h1 class="title">CastNet</h1>
+      <p class="subtitle">Conectá con pescadores y guías, compartí flotadas y conocé nuevos ríos.</p>
+      <p class="subtitle small">Casteá en red.</p>
+
+      <!-- Formulario -->
+      <form class="search-form" action="#" method="get">
+        <div class="form-row">
+          <div class="form-field"><input type="text" placeholder="Ubicación" required></div>
+          <div class="form-field"><input type="date" required></div>
+          <div class="form-field"><input type="date" required></div>
+        </div>
+        <div class="form-row">
+          <div class="form-field"><input type="time" required></div>
+          <div class="form-field"><input type="time" required></div>
+        </div>
+        <div class="form-row">
+          <button type="submit" class="cta-button">Buscar</button>
+        </div>
+      </form>
+
+      <!-- Recomendaciones -->
+      <h2 class="section-heading">Opciones recomendadas para ti</h2>
+      <section class="cards">
+        <!-- Cards -->
+      </section>
+
+      <!-- Testimonios -->
+      <h2 class="section-heading">Testimonios</h2>
+      <section class="testimonials">
+        <!-- Testimonios -->
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    © 2025 CastNet. Todos los derechos reservados.
+  </footer>
+
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.12.0/firebase-auth.js"></script>
+
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyB-jb3mybgixNPt4DbjveAamPLXPjfdUnw",
+      authDomain: "castnet-8a81c.firebaseapp.com",
+      projectId: "castnet-8a81c",
+      storageBucket: "castnet-8a81c.appspot.com",
+      messagingSenderId: "685260060310",
+      appId: "1:685260060310:web:e82e1193ec898d489474b7",
+      measurementId: "G-FFZPFNK4MW"
+    };
+
+    firebase.initializeApp(firebaseConfig);
+    const auth = firebase.auth();
+  </script>
+</body>
+</html>
